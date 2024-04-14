@@ -1,3 +1,4 @@
+import 'package:baskball/page/home.dart';
 import 'package:baskball/page/splash.dart';
 import 'package:flutter/material.dart';
 
@@ -12,10 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Counter',
       initialRoute: SplashScreen.routName,
       routes: {
         SplashScreen.routName: (context) => SplashScreen(),
+        Home.routeName: (context) => Home(),
       },
     );
   }
